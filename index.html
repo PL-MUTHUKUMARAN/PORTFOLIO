@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inter"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="portfolio">Portfolio</div>
+
+      <input type="checkbox" id="menu-toggle" />
+
+      <label for="menu-toggle" class="bars-icon">
+        <i class="fa fa-bars"></i>
+      </label>
+
+      <label for="menu-toggle" class="close-icon">
+        <i class="fa fa-close"></i>
+      </label>
+
+      <nav>
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about-me">ABOUT</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Hi, I'm <span class="hero-name">Muthukumaran</span></h1>
+
+        <h3>
+          and I'm
+          <span style="--i: 3" data-text="Frontend Developer">
+            Frontend Developer
+          </span>
+          <span style="--i: 2" data-text="ECE Student">ECE Student</span>
+          <span style="--i: 1" data-text="ADCA Certified">ADCA Certified</span>
+        </h3>
+
+        <p>
+          Explore my projects, skills, and experiences. Let's connect and
+          collaborate!
+        </p>
+
+        <div id="btns">
+          <button class="btn" onclick="window.location.href='#contact'">
+            Hire Me
+          </button>
+          <button class="btn" onclick="window.location.href='#projects'">
+            View Work
+          </button>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://github.com/PL-MUTHUKUMARAN" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/plmuthukumaran" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="profile-picture-container">
+        <div>
+          <img
+            src="profile-picture.jpg"
+            alt="Profile Picture"
+            class="profile-picture"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about-me">
+      <div class="about-content">
+        <h2>About <span>Me</span></h2>
+
+        <div class="about-me">
+          <img
+            src="profile-picture1.jpg"
+            alt="Profile Picture"
+            class="profile-picture"
+          />
+
+          <div class="about-me-desc" style="width: 800px">
+            <h3>Who Am I?</h3>
+            <p>
+              I am a passionate Frontend Developer with a strong interest in
+              building interactive and user-friendly web applications. Currently
+              pursuing a degree in Electronics and Communication Engineering, I
+              enjoy turning ideas into responsive, visually appealing
+              interfaces. I’m always exploring new technologies and improving my
+              skills.
+            </p>
+
+            <div id="btns">
+              <button class="btn" onclick="window.location.href='#skills'">
+                View Skills
+              </button>
+              <button class="btn" onclick="window.location.href='#projects'">
+                View Work
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience">
+          <h3>My <span>Experience</span></h3>
+
+          <div class="experience-container">
+            <div class="experience-item exp-i1">
+              <h4>Full Stack Web Developer</h4>
+              <p>
+                8Queens Software Technologies Pvt Ltd | June 2025 - July 2025
+              </p>
+              <p>
+                Developed a comprehensive web application for managing employee
+                records and enhancing data accessibility.
+              </p>
+            </div>
+
+            <div class="experience-item" id="exp-i2">
+              <h4>Daily Experience</h4>
+              <p></p>
+              <p>
+                Consistently improving full-stack development skills through
+                daily practice — building mini projects, learning new
+                technologies, and enhancing problem-solving ability.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+      <h2>My <span>Skills</span></h2>
+
+      <div class="skills-container">
+        <div class="skills-item s1">
+          <h3>Technical Skills</h3>
+          <ul>
+            <li>HTML<span>95%</span></li>
+            <li>CSS<span>85%</span></li>
+            <li>JavaScript<span>75%</span></li>
+            <li>C<span>85%</span></li>
+            <li>C++<span>85%</span></li>
+            <li>java<span>80%</span></li>
+          </ul>
+        </div>
+
+        <div class="skills-item s2">
+          <h3>Professional Skills</h3>
+          <ul>
+            <li>Problem Solving<span>80%</span></li>
+            <li>Communication<span>85%</span></li>
+            <li>Creativity<span>80%</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <div class="projects-container">
+        <h2>My <span>Projects</span></h2>
+
+        <div class="projects-card-container">
+          <!-- PROJECT 1 -->
+          <div class="project-card p1">
+            <img src="p1.jpg" alt="Project Screenshot" class="project-image" />
+
+            <div class="project-content">
+              <h3 class="project-title">Flappy Flyer</h3>
+              <p class="project-desc">
+                A browser-based SVG game inspired by Flappy Bird, built using
+                HTML5, CSS, JavaScript, and SVG.
+              </p>
+
+              <div class="tech-stack">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JAVASCRIPT</span>
+                <span class="tag">SVG</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://pl-muthukumaran.github.io/Flappy-Flyer/"
+                  class="link demo"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/PL-MUTHUKUMARAN/Flappy-Flyer"
+                  class="link code"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 2 -->
+          <div class="project-card p2">
+            <img src="p2.jpg" alt="Project Screenshot" class="project-image" />
+
+            <div class="project-content">
+              <h3 class="project-title">Scientific Calculator</h3>
+              <p class="project-desc">
+                Interactive demo of a scientific calculator built with HTML5,
+                CSS, and JavaScript.
+              </p>
+
+              <div class="tech-stack">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JAVASCRIPT</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://pl-muthukumaran.github.io/Scientific-Calculator/"
+                  class="link demo"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/PL-MUTHUKUMARAN/Scientific-Calculator"
+                  class="link code"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 3 -->
+          <div class="project-card p3">
+            <img src="p3.jpg" alt="Project Screenshot" class="project-image" />
+
+            <div class="project-content">
+              <h3 class="project-title">XOVERSE</h3>
+              <p class="project-desc">
+                XOVERSE is a Tic Tac Toe game with PvP and PvC modes built using
+                HTML, CSS, and JavaScript.
+              </p>
+
+              <div class="tech-stack">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JAVASCRIPT</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://pl-muthukumaran.github.io/XOVERSE/"
+                  class="link demo"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/PL-MUTHUKUMARAN/XOVERSE"
+                  class="link code"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 4 -->
+          <div class="project-card p1">
+            <img src="p4.png" alt="Project Screenshot" class="project-image" />
+
+            <div class="project-content">
+              <h3 class="project-title">E-Book Library – Frontend Prototype</h3>
+              <p class="project-desc">
+                A categorized e-book library website with login, signup and
+                search features.
+              </p>
+
+              <div class="tech-stack">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JAVASCRIPT</span>
+              </div>
+
+              <div class="project-links">
+                <a href="p4-img.jpg" class="link demo">
+                  <i class="fa-solid fa-certificate"></i> Certificate
+                </a>
+
+                <a
+                  href="https://github.com/PL-MUTHUKUMARAN/ebook-library"
+                  class="link code"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 5 -->
+          <div class="project-card p3">
+            <img
+              src="p5.jpg"
+              alt="Project Screenshot"
+              class="project-image p5"
+            />
+
+            <div class="project-content">
+              <h3 class="project-title">PORTFOLIO</h3>
+              <p class="project-desc">
+                A responsive personal portfolio website highlighting my skills,
+                projects, and achievements.
+              </p>
+
+              <div class="tech-stack">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://pl-muthukumaran.github.io/PORTFOLIO/"
+                  class="link demo"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/PL-MUTHUKUMARAN/PORTFOLIO"
+                  class="link code"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <h2 class="git">Get In <span>Touch</span></h2>
+
+      <div class="contact-container">
+        <!-- LEFT SECTION -->
+        <div class="c1">
+          <h2>Contact Information</h2>
+          <p>
+            Feel free to reach out for opportunities or questions. I'm always
+            open to discussing new ideas and collaborations.
+          </p>
+
+          <div class="location">
+            <h3><i class="fas fa-map-marker-alt"></i></h3>
+            <div>
+              <h3><strong>location</strong></h3>
+              <p>Chennai,India</p>
+            </div>
+          </div>
+
+          <div class="email">
+            <h3><i class="fas fa-envelope"></i></h3>
+            <div>
+              <h3><strong>Email</strong></h3>
+              <p>plmuthukumaran@gmail.com</p>
+            </div>
+          </div>
+
+          <div>
+            <h3>Follow Me</h3>
+            <div class="social-icons follow-me-link">
+              <a href="https://github.com/PL-MUTHUKUMARAN" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://linkedin.com/in/plmuthukumaran" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT SECTION -->
+        <div class="c2">
+          <h2>Send Me a Message</h2>
+
+          <form action="https://formspree.io/f/mwpajrbo" method="POST">
+            <label for="name">Your Name</label><br />
+            <input type="text" id="name" name="name" required /><br />
+
+            <label for="mail">Your Email</label><br />
+            <input type="email" id="mail" name="mail" required /><br />
+
+            <label for="subject">Subject</label><br />
+            <input type="text" id="subject" name="subject" required /><br />
+
+            <label for="msg">Message</label><br />
+            <textarea id="msg" name="msg" rows="5" required></textarea><br />
+
+            <button class="send-btn">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
