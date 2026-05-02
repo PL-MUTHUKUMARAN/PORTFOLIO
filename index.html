@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -66,10 +66,10 @@
         </p>
 
         <div id="btns">
-          <button class="btn" onclick="window.location.href='#contact'">
+          <button class="btn" onclick="window.location.href = '#contact'">
             Hire Me
           </button>
-          <button class="btn" onclick="window.location.href='#projects'">
+          <button class="btn" onclick="window.location.href = '#projects'">
             View Work
           </button>
         </div>
@@ -110,19 +110,20 @@
           <div class="about-me-desc" style="width: 800px">
             <h3>Who Am I?</h3>
             <p>
-              I am a passionate Frontend Developer with a strong interest in
-              building interactive and user-friendly web applications. Currently
-              pursuing a degree in Electronics and Communication Engineering, I
-              enjoy turning ideas into responsive, visually appealing
-              interfaces. I’m always exploring new technologies and improving my
-              skills.
+              Electronics and Communication Engineering undergraduate with
+              hands-on experience in full-stack web development. Skilled in
+              building responsive web applications, implementing backend logic,
+              and developing interactive browser-based projects. Strong
+              foundation in programming and problem-solving, with a keen
+              interest in applying technical skills to real-world software
+              development roles.
             </p>
 
             <div id="btns">
-              <button class="btn" onclick="window.location.href='#skills'">
+              <button class="btn" onclick="window.location.href = '#skills'">
                 View Skills
               </button>
-              <button class="btn" onclick="window.location.href='#projects'">
+              <button class="btn" onclick="window.location.href = '#projects'">
                 View Work
               </button>
             </div>
@@ -194,6 +195,42 @@
         <div class="projects-card-container">
           <!-- PROJECT 1 -->
           <div class="project-card p1">
+            <img src="p6.jpg" alt="Project Screenshot" class="project-image" />
+
+            <div class="project-content">
+              <h3 class="project-title">Crazekart (e-commerce)</h3>
+              <p class="project-desc">
+                Created a full-stack e-commerce application with login
+                authentication and product management system.
+              </p>
+
+              <div class="tech-stack">
+                <span class="tag">HTML,CSS,JS</span>
+                <span class="tag">FLASK</span>
+                <span class="tag">SQLAlchemy</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://crazekart.onrender.com/index"
+                  class="link demo"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/PL-MUTHUKUMARAN/Crazekart"
+                  class="link code"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 1 -->
+          <div class="project-card p2">
             <img src="p1.jpg" alt="Project Screenshot" class="project-image" />
 
             <div class="project-content">
@@ -229,7 +266,7 @@
           </div>
 
           <!-- PROJECT 2 -->
-          <div class="project-card p2">
+          <div class="project-card p3">
             <img src="p2.jpg" alt="Project Screenshot" class="project-image" />
 
             <div class="project-content">
@@ -264,7 +301,7 @@
           </div>
 
           <!-- PROJECT 3 -->
-          <div class="project-card p3">
+          <div class="project-card p1">
             <img src="p3.jpg" alt="Project Screenshot" class="project-image" />
 
             <div class="project-content">
@@ -299,7 +336,7 @@
           </div>
 
           <!-- PROJECT 4 -->
-          <div class="project-card p1">
+          <div class="project-card p2">
             <img src="p4.png" alt="Project Screenshot" class="project-image" />
 
             <div class="project-content">
@@ -439,4 +476,3 @@
     </section>
   </body>
 </html>
-
